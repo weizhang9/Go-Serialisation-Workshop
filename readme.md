@@ -23,7 +23,7 @@ The auto-generated protobuf code is committed, but can be removed (`weather/weat
 - install protoc `brew install protobuf`
 - and proto-go-gen `go install google.golang.org/protobuf/cmd/protoc-gen-go`
 - and add it to your $PATH `export PATH="${PATH}:${HOME}/go/bin"`
-- then generate with command `protoc --go_out pb --go_opt=paths=source_relative weather.proto`.
+- then generate with command `protoc --go_out pb --go_opt=paths=source_relative weather.proto`
 
 ### Run the benchmark test
 ```

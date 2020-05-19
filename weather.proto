@@ -1,0 +1,17 @@
+syntax = "proto3";
+import "google/protobuf/timestamp.proto";
+
+package pb;
+option go_package = "github.com/353solutions/weather/pb";
+
+message Value {
+	double value = 1;
+	string unit = 2; // e.g. "in", "f", "c" ...
+}
+
+message Record {
+	google.protobuf.Timestamp time = 1;
+	string station = 2;
+	Value temperature = 3;
+	Value rain = 4;
+}
